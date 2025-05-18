@@ -11,7 +11,7 @@ connectDB();
 
 app.use(
   cors({
-    origin: "https://newskill-bridge.vercel.app/:3000",
+    origin: "https://newskill-bridge.vercel.app",
     credentials: true,
   })
 );
