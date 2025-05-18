@@ -39,7 +39,7 @@ export const register = async (req, res) => {
     );
 
     // Create verification link
-    const verificationLink = `http://localhost:3000/verify/${emailToken}`;
+    const verificationLink = `https://newskill-bridge.vercel.app/verify/${emailToken}`;
 
     // Send email using NodeMailer
     const transporter = nodemailer.createTransport({
