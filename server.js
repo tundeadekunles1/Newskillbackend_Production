@@ -18,7 +18,7 @@ connectDB();
 
 app.use(
   cors({
-    origin: "https://newskill-bridge.vercel.app/api",
+    origin: "https://newskill-bridge.vercel.app",
     credentials: true,
   })
 );
@@ -40,5 +40,5 @@ app.use("/api", calendarRoutes);
 
 const PORT = process.env.PORT || 10000;
 app.listen(PORT, () =>
-  console.log(`Server running on http://localhost:${PORT}`)
+  console.log(`Server running on https://newskill-bridge.vercel.app:${PORT}`)
 );
